@@ -20,6 +20,10 @@ def calculator():
     
     operator = input("연산자 입력: ")
     
+    if operator not in ['+', '-', '*', '/']:
+        print("Error! 유효하지 않은 연산자입니다. +, -, *, / 중에서 선택해주세요.")
+        return
+    
     num1 = float(input("첫 번째 숫자 입력: "))
     num2 = float(input("두 번째 숫자 입력: "))
     
